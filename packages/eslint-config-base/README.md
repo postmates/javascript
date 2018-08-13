@@ -23,7 +23,7 @@ If you use yarn, run `npm info "@postmates/eslint-config-base@latest" peerDepend
   If using **npm 5+**, use this shortcut
 
   ```sh
-  npx install-peerdeps --dev eslint-config-airbnb-base
+  npx install-peerdeps --dev eslint-config-base
   ```
 
   If using **npm < 5**, Linux/OSX users can run
