@@ -1,8 +1,4 @@
 module.exports = {
-  env: {
-    typescript: true
-  },
-
   overrides: [{
     parser: 'typescript-eslint-parser',
     files: ['*.ts', '*.tsx'],
