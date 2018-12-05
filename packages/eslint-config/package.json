@@ -1,6 +1,6 @@
 {
   "name": "@postmates/eslint-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Postmates' ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,6 @@
     "lint": "eslint .",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
-    "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test)",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
     "link:eslint": "cd node_modules/eslint && npm link && cd -",
@@ -39,7 +38,7 @@
   },
   "homepage": "https://github.com/postmates/javascript",
   "dependencies": {
-    "@postmates/eslint-config-base": "^2.0.0",
+    "@postmates/eslint-config-base": "^3.0.0",
     "object.assign": "^4.1.0",
     "object.entries": "^1.0.4"
   },
