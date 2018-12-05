@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    'jsx-a11y',
     'typescript',
   ],
   overrides: [{
@@ -19,6 +20,7 @@ module.exports = {
       'no-shadow': 'off',
       'require-yield': 'off',
       'consistent-return': 'off',
+      'jsx-a11y/anchor-is-valid': 'off',
 
       'arrow-parens': 'error',
       'typescript/adjacent-overload-signatures': 'error',
