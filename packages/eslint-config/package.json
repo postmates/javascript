@@ -1,6 +1,6 @@
 {
   "name": "@postmates/eslint-config",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "Postmates' ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/postmates/javascript",
   "dependencies": {
-    "@postmates/eslint-config-base": "^3.0.0",
+    "@postmates/eslint-config-base": "^3.0.1",
     "object.assign": "^4.1.0",
     "object.entries": "^1.0.4"
   },
