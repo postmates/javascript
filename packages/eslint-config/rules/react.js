@@ -227,47 +227,7 @@ module.exports = {
 
     // Enforce component methods order
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/sort-comp.md
-    'react/sort-comp': ['error', {
-      order: [
-        'static-methods',
-        'instance-variables',
-        'lifecycle',
-        '/^on.+$/',
-        'getters',
-        'setters',
-        '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-        'instance-methods',
-        'everything-else',
-        'rendering',
-      ],
-      groups: {
-        lifecycle: [
-          'displayName',
-          'propTypes',
-          'contextTypes',
-          'childContextTypes',
-          'mixins',
-          'statics',
-          'defaultProps',
-          'constructor',
-          'getDefaultProps',
-          'getInitialState',
-          'state',
-          'getChildContext',
-          'componentWillMount',
-          'componentDidMount',
-          'componentWillReceiveProps',
-          'shouldComponentUpdate',
-          'componentWillUpdate',
-          'componentDidUpdate',
-          'componentWillUnmount',
-        ],
-        rendering: [
-          '/^render.+$/',
-          'render'
-        ],
-      },
-    }],
+    'react/sort-comp': 'off',
 
     // Prevent missing parentheses around multilines JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-wrap-multilines.md
@@ -299,7 +259,7 @@ module.exports = {
 
     // only .jsx files may have JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
 
     // prevent accidental JS comments from being injected into JSX as text
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
@@ -339,7 +299,7 @@ module.exports = {
 
     // Require style prop value be an object or var
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
-    'react/style-prop-object': 'error',
+    'react/style-prop-object': 'off',
 
     // Prevent invalid characters from appearing in markup
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
@@ -365,7 +325,7 @@ module.exports = {
 
     // Prevent usage of Array index in keys
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
-    'react/no-array-index-key': 'warn',
+    'react/no-array-index-key': 'off',
 
     // Enforce a defaultProps definition for every prop that is not a required prop
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/require-default-props.md

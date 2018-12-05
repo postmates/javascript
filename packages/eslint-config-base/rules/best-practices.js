@@ -26,7 +26,7 @@ module.exports = {
     curly: ['error', 'multi-line'],
 
     // require default case in switch statements
-    'default-case': ['error', { commentPattern: '^no default$' }],
+    'default-case': 'off',
 
     // encourages use of dot notation whenever possible
     'dot-notation': ['error', { allowKeywords: true }],
@@ -260,7 +260,7 @@ module.exports = {
     'no-sequences': 'error',
 
     // restrict what can be thrown as an exception
-    'no-throw-literal': 'error',
+    'no-throw-literal': 'off',
 
     // disallow unmodified conditions of loops
     // https://eslint.org/docs/rules/no-unmodified-loop-condition

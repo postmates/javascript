@@ -69,28 +69,7 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
     // paths are treated both as absolute paths, and relative to process.cwd()
     'import/no-extraneous-dependencies': ['error', {
-      devDependencies: [
-        'test/**', // tape, common npm pattern
-        'tests/**', // also common npm pattern
-        'spec/**', // mocha, rspec-like pattern
-        '**/__tests__/**', // jest pattern
-        '**/__mocks__/**', // jest pattern
-        'test.{js,jsx}', // repos with a single test file
-        'test-*.{js,jsx}', // repos with multiple top-level test files
-        '**/*{.,_}{test,spec}.{js,jsx}', // tests where the extension or filename suffix denotes that it is a test
-        '**/jest.config.js', // jest config
-        '**/vue.config.js', // vue-cli config
-        '**/webpack.config.js', // webpack config
-        '**/webpack.config.*.js', // webpack config
-        '**/rollup.config.js', // rollup config
-        '**/rollup.config.*.js', // rollup config
-        '**/gulpfile.js', // gulp config
-        '**/gulpfile.*.js', // gulp config
-        '**/Gruntfile{,.js}', // grunt config
-        '**/protractor.conf.js', // protractor config
-        '**/protractor.conf.*.js', // protractor config
-      ],
-      optionalDependencies: false,
+      devDependencies: ['**/*{.,_}{test,spec}.{js,jsx,ts,tsx}'],
     }],
 
     // Forbid mutable exports
@@ -134,10 +113,11 @@ module.exports = {
 
     // Ensure consistent use of file extension within the import path
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
-    'import/extensions': ['error', 'ignorePackages', {
+    'import/extensions': ['error', 'always', {
       js: 'never',
-      mjs: 'never',
       jsx: 'never',
+      ts: 'never',
+      tsx: 'never',
     }],
 
     // ensure absolute imports are above relative imports and that unassigned imports are ignored
@@ -184,7 +164,7 @@ module.exports = {
 
     // Forbid Webpack loader syntax in imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
-    'import/no-webpack-loader-syntax': 'error',
+    'import/no-webpack-loader-syntax': 'off',
 
     // Prevent unassigned imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
