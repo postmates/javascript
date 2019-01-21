@@ -1,6 +1,6 @@
 {
   "name": "@postmates/eslint-config",
-  "version": "3.0.9",
+  "version": "4.0.0",
   "description": "Postmates' ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -54,15 +54,14 @@
     "in-publish": "^2.0.0",
     "react": ">= 0.13.0",
     "safe-publish-latest": "^1.1.2",
-    "tape": "^4.9.1",
-    "typescript-eslint-parser": "^21.0.2"
+    "tape": "^4.9.1"
   },
   "peerDependencies": {
     "eslint": "^4.19.1 || ^5.3.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
-    "typescript-eslint-parser": "^21.0.2"
+    "@typescript-eslint/parser": "^21.0.2"
   },
   "engines": {
     "node": ">= 4"
