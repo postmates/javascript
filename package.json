@@ -4,17 +4,17 @@
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
     "preinstall": "npm run install:config && npm run install:config:base",
-    "install:config": "cd packages/eslint-config-postmates && npm prune && npm install",
-    "install:config:base": "cd packages/eslint-config-postmates-base && npm prune && npm install",
+    "install:config": "cd packages/eslint-config && npm prune && npm install",
+    "install:config:base": "cd packages/eslint-config-base && npm prune && npm install",
     "lint": "markdownlint --config linters/.markdownlint.json README.md */README.md",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent test:config && npm run --silent test:config:base",
-    "test:config": "cd packages/eslint-config-postmates; npm test",
-    "test:config:base": "cd packages/eslint-config-postmates-base; npm test",
+    "test:config": "cd packages/eslint-config; npm test",
+    "test:config:base": "cd packages/eslint-config-base; npm test",
     "pretravis": "npm run --silent lint",
     "travis": "npm run --silent travis:config && npm run --silent travis:config:base",
-    "travis:config": "cd packages/eslint-config-postmates; npm run travis",
-    "travis:config:base": "cd packages/eslint-config-postmates-base; npm run travis"
+    "travis:config": "cd packages/eslint-config; npm run travis",
+    "travis:config:base": "cd packages/eslint-config-base; npm run travis"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/postmates/javascript",
   "devDependencies": {
-    "markdownlint-cli": "^0.10.0"
+    "markdownlint-cli": "^0.13.0"
   }
 }
