@@ -5,6 +5,7 @@ module.exports = {
   ],
   overrides: [{
     parser: '@typescript-eslint/parser',
+    extends: ['plugin:@typescript-eslint/recommended'],
     files: ['*.ts', '*.tsx'],
     rules: {
       'no-useless-constructor': 'off',
@@ -23,10 +24,6 @@ module.exports = {
       'jsx-a11y/anchor-is-valid': 'off',
 
       'arrow-parens': 'error',
-      '@typescript-eslint/adjacent-overload-signatures': 'error',
-      '@typescript-eslint/member-delimiter-style': 'error',
-      '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
-      '@typescript-eslint/type-annotation-spacing': 'error',
     }
   }]
 };
