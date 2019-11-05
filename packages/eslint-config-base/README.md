@@ -26,6 +26,9 @@ If you use yarn, run `npm info "@postmates/eslint-config-base@latest" peerDepend
   npx install-peerdeps --dev eslint-config-base
   ```
 
+  If using **yarn**, you can also use the shortcut described above if you have npm 5+ installed on your machine, as the command will detect that you are using yarn and will act accordingly.
+  Otherwise, run `npm info "eslint-config-airbnb-base@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency.
+
   If using **npm < 5**, Linux/OSX users can run
 
   ```sh
