@@ -3,9 +3,9 @@ module.exports = {
     'jsx-a11y',
     '@typescript-eslint',
   ],
+  extends: ['plugin:@typescript-eslint/recommended'],
   overrides: [{
     parser: '@typescript-eslint/parser',
-    extends: ['plugin:@typescript-eslint/recommended'],
     files: ['*.ts', '*.tsx'],
     rules: {
       'no-useless-constructor': 'off',
